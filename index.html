@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chhichhore — Tribute</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="nav-left">
+      <a href="#hero" class="brand" id="brand"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWajsQzuhp-DotsxXwQQOH_XgbkiDweYYOw&s" alt="Chhichhore logo" onerror="this.style.display='none'">
+        <span class="brand-text">CHHICHHORE</span>
+      </a>
+    </div>
+
+    <div class="nav-center">
+      <input id="searchInput" class="nav-search" type="search" placeholder="Search characters / moments..." aria-label="Search site">
+    </div>
+
+    <nav class="nav-right" role="navigation" aria-label="Main navigation">
+      <a class="nav-icon" href="#hero" data-tooltip="Home"><i class="fas fa-home"></i></a>
+      <a class="nav-icon" href="#characters" data-tooltip="Characters"><i class="fas fa-users"></i></a>
+      <a class="nav-icon" href="#sports" data-tooltip="Sports Arena"><i class="fas fa-flag-checkered"></i></a>
+      <a class="nav-icon" href="#emotional" data-tooltip="Message"><i class="fas fa-heart"></i></a>
+      <a class="nav-icon" href="#gallery" data-tooltip="Gallery"><i class="fas fa-images"></i></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        
+        <h1 id="hero-title" class="scribble">CHHICHHORE</h1>
+        <p class="sub">A Tribute to Friendship, Sports & Never Giving Up</p>
+        <button class="scroll-btn" data-target="#characters" aria-label="See characters">↓</button>
+      </div>
+    </section>
+
+    <!-- CHARACTERS -->
+    <section id="characters" class="section" aria-labelledby="characters-title">
+      <h2 id="characters-title" class="section-title">Meet The Gang</h2>
+      <div class="character-grid" id="characterGrid">
+        <!-- cards (data-video points to mp4 files in videos/ ) -->
+        <div class="character-card" data-name="Anni" data-video="videos/anni.mp4" tabindex="0">Anni</div>
+        <div class="character-card" data-name="Derek" data-video="videos/derek.mp4" tabindex="0">Derek</div>
+        <div class="character-card" data-name="Mummy" data-video="videos/mummy.mp4" tabindex="0">Mummy</div>
+        <div class="character-card" data-name="Bevda" data-video="videos/bevda.mp4" tabindex="0">Bevda</div>
+        <div class="character-card" data-name="Acid" data-video="videos/acid.mp4" tabindex="0">Acid</div>
+        <div class="character-card" data-name="Maya" data-video="videos/maya.mp4" tabindex="0">Maya</div>
+        <div class="character-card" data-name="Sexa" data-video="videos/sexa.mp4" tabindex="0">Sexa</div>
+      </div>
+      <p class="hint">Hover a card to see a short preview. Click to open full clip.</p>
+    </section>
+
+    <!-- SPORTS ARENA -->
+    <section id="sports" class="section" aria-labelledby="sports-title">
+      <h2 id="sports-title" class="section-title">Sports Arena</h2>
+      <div class="stadium">
+        
+        <button class="sport-btn" data-video="videos/basketball.mp4" aria-label="Basketball"><i class="fas fa-basketball-ball"></i><span>Basketball</span></button>
+        <button class="sport-btn" data-video="videos/cricket.mp4" aria-label="Cricket"><i class="fas fa-bowling-ball"></i><span>Cricket</span></button>
+        <button class="sport-btn" data-video="videos/relay.mp4" aria-label="Relay"><i class="fas fa-running"></i><span>Relay</span></button>
+        <button class="sport-btn" data-video="videos/football.mp4" aria-label="Football"><i class="fas fa-futbol"></i><span>Football</span></button>
+      </div>
+      <p class="hint">Click an icon to watch the scene.</p>
+    </section>
+
+    <!-- EMOTIONAL CORE -->
+    <section id="emotional" class="section emotional" aria-labelledby="emotional-title">
+      <h2 id="emotional-title" class="section-title">Winners don’t give up</h2>
+      <div class="emotional-inner">
+        <div class="hospital-sketch" aria-hidden="true"></div>
+        <blockquote class="big-quote">“Winners don’t give up after failure — they fight harder.”</blockquote>
+        <!-- embedded short clip inside section (kept inside layout) -->
+        <div class="emotional-clip">
+          <video controls preload="metadata" src="videos/climax.mp4" aria-label="Motivational scene"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="section-title">Moments & Memories</h2>
+      <div class="gallery-wall" id="galleryWall">
+        <div class="polaroid" data-video="videos/hostel.mp4" tabindex="0">
+          <div class="polaroid-label">Hostel Masti</div>
+        </div>
+        <div class="polaroid" data-video="videos/sports.mp4" tabindex="0">
+          <div class="polaroid-label">Sports Prep</div>
+        </div>
+        <div class="polaroid" data-video="videos/reunion.mp4" tabindex="0">
+          <div class="polaroid-label">Reunion</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <section class="friendship-quiz">
+  <h2 class="section-title">Which Chhichhore Character Are You?</h2>
+  <div class="quiz-container">
+    <div class="question" id="question">Loading...</div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn" style="display:none;">Next</button>
+  </div>
+  <div class="quiz-result" id="quizResult" style="display:none;"></div>
+</section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+      <img src="images/youtube.png" alt="YouTube" class="footer-icon">
+    </a>
+    <a href="https://github.com/" target="_blank" title="GitHub">
+      <img src="images/github.png" alt="GitHub" class="footer-icon">
+    </a>
+    <a href="https://www.google.com/" target="_blank" title="Google">
+      <img src="images/google.png" alt="Google" class="footer-icon">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+      <img src="images/linkedin.png" alt="LinkedIn" class="footer-icon">
+    </a>
+  </div>
+  <div class="footer-right">
+    Made by Aditya⭐
+  </div>
+</footer>
+
+
+  
+  
+<!-- SHARED VIDEO MODAL -->
+  <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-label="Video preview dialog">
+    <div class="video-box">
+      <button class="modal-close" id="closeBtn" aria-label="Close preview">✖</button>
+      <video id="modalVideo" controls preload="metadata"><source src="" type="video/mp4"></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
